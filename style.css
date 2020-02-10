@@ -1,0 +1,23 @@
+body {
+    margin-top: 5%;
+}
+
+h1, h3, h4 {
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.links {
+    display: flex;
+    align-items: flex-end;
+    justify-content: left;
+}
+
+.header, .content {
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: underline;
+    color: #14c41e;
+}
