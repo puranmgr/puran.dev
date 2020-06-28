@@ -1,21 +1,76 @@
+/*** fonts ***/
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
-h1, h3, h4 {
-    font-family: 'IBM Plex Mono', monospace;
+* {
+  box-sizing: border-box;
+  margin: 0;
 }
 
-.links {
-    display: flex;
-    align-items: flex-end;
-    justify-content: left;
+body {
+  background: #fafafa;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
 }
 
-.header, .content {
-    display: flex;
-    flex-direction: column;
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: inline;
+  margin: 0;
+}
+
+h1 {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 3.7rem;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.contact {
+  margin: 10px;
 }
 
 a {
-    text-decoration: underline;
-    color: #14c41e;
+  text-decoration: none;
+  color: #000;
+  margin: 0 5px;
+  font-weight: 500;
+  font-size: 0.9em;
 }
 
+a:hover {
+  color: rgb(125, 123, 126);
+}
+
+.links li {
+  position: relative;
+  display: inline-block;
+  transition: transform 0.3s;
+}
+
+.links li a {
+  position: relative;
+  text-decoration: none;
+}
+
+.links > li:hover {
+  -webkit-transform: rotate(10deg);
+  -moz-transform: rotate(10deg);
+  -o-transform: rotate(10deg);
+  transform: rotate(10deg);
+}
+
+footer {
+  font-size: 0.8em;
+  position: absolute;
+  bottom: 0;
+  height: 2.5rem;
+}
